@@ -1,32 +1,22 @@
-
 # bDNA Protocol — Post-Quantum Sovereign Genomic Data Integrity
 
-**Defensive Publication**
+**Defensive Publication — June 2026**
 
-**Problem**  
-Current genomic data sharing architectures require either (a) moving raw sequencing data across borders/institutions or (b) relying on classical cryptographic schemes (especially bilinear pairing-based CP-ABE) that are vulnerable to harvest-now-decrypt-later attacks by future cryptographically relevant quantum computers. No NIST-standardized post-quantum solution currently exists for expressive, policy-based access control over long-lived sensitive genomic data while preserving sovereign control of raw data.
+**The Problem**  
+Genomic sequencing and identification today rely on high human/institutional trust. Raw molecular data must often be moved or shared, creating privacy risks, sovereignty issues, and quantum vulnerabilities.
 
-**Solution**  
-bDNA is a protocol architecture that converts raw genomic sequencing data into compact, cryptographically verifiable **cryptogenomic proof objects** at the point of sequencing. Raw sequence data remains under institutional/sovereign control. Only the proof object travels.
+**The Solution**  
+bDNA integrates a secure machine (Enclave) with a post-quantum protocol that generates cryptogenomic proof objects directly at the point of sequencing.
 
-The proof object combines:
-- Merkle commitment to the raw data
-- Recursive STARK-based verifiable computation of genomic analyses
-- Post-quantum digital signatures (Dilithium, FIPS 204)
-- Hardware attestation (secure element / Enclave)
-- Post-quantum access control envelope (lattice-based CP-ABE successor)
+Raw sequence data never leaves the local secure environment. Only compact, verifiable proof objects are shared.
 
-This architecture enables sovereign, post-quantum, policy-enforced sharing of genomic insights without exposing raw data.
+**Key Elements**: Merkle root + Recursive STARKs + Dilithium signature + Hardware attestation + Policy-based access control envelope.
 
-**Purpose of this repository**  
-This repository serves as public defensive publication of the bDNA protocol concept to establish prior art. It contains only high-level problem statement and solution architecture. No proprietary implementation details, hardware designs, or internal documents are disclosed here.
+This minimizes human involvement and enables sovereign genomic identification with post-quantum security.
 
-**Version:** June 2026 (defensive publication)  
-**License:** CC0 1.0 (Public Domain Dedication) for this publication
+See `bDNA_Protocol_Overview.md` for details.
 
-**Contact**  
-Shoel Lowy — lowy_s@blockchaindnafoundation.org
+**Lizard-CP-ABE**: Separate repository for the post-quantum access control component.
 
----
-
-*This repository is maintained for defensive publication and open scientific prior art only.*
+**License**: CC0 1.0  
+**Contact**: Shoel Lowy — lowy_s@blockchaindnafoundation.org
