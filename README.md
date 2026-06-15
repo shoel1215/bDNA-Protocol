@@ -10,7 +10,7 @@ bDNA integrates a secure machine (Enclave) with a post-quantum protocol that gen
 
 Raw sequence data never leaves the local secure environment. Only compact, verifiable proof objects are shared.
 
-**Key Elements**: Merkle root + Recursive STARKs + Dilithium signature + Hardware attestation + Policy-based access control envelope.
+**Key Elements**: Merkle root + Recursive STARKs + Dilithium signature + Hardware attestation + Policy-based access control envelope (Lizard-CP-ABE).
 
 This minimizes human involvement and enables sovereign genomic identification with post-quantum security.
 
@@ -20,3 +20,6 @@ See `bDNA_Protocol_Overview.md` for details.
 
 **License**: CC0 1.0  
 **Contact**: Shoel Lowy — lowy_s@blockchaindnafoundation.org
+
+---
+*This repository is maintained for defensive publication and open scientific prior art only.*
