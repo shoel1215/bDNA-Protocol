@@ -23,3 +23,6 @@ This enables sovereign genomic identification while preserving scientific integr
 High-level architecture published for prior art. Detailed implementations are proprietary or in separate repositories (e.g. Lizard-CP-ABE for the access control component).
 
 **License**: CC0 1.0
+
+**Access Control Component**  
+The policy-based access control envelope in the proof object is addressed in the separate **Lizard-CP-ABE** repository (post-quantum hardware-native CP-ABE successor).
