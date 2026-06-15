@@ -1,20 +1,32 @@
-# bDNA Foundation — Sovereign Genomic Cryptographic Infrastructure
 
-**Public cryptographic infrastructure for scientific integrity.**
+# bDNA Protocol — Post-Quantum Sovereign Genomic Data Integrity
 
-bDNA is a protocol that converts raw genomic sequencing data into cryptographically verifiable objects. Raw sequence data remains at the originating institution. Only cryptogenomic proof objects travel.
+**Defensive Publication**
 
-**Version:** 2.0 (June 2026)  
-**License:** Apache 2.0 (protocol & code) / CC0 (publications)  
-**Defensive Publication:** Zenodo DOI 10.5281/zenodo.18782639
+**Problem**  
+Current genomic data sharing architectures require either (a) moving raw sequencing data across borders/institutions or (b) relying on classical cryptographic schemes (especially bilinear pairing-based CP-ABE) that are vulnerable to harvest-now-decrypt-later attacks by future cryptographically relevant quantum computers. No NIST-standardized post-quantum solution currently exists for expressive, policy-based access control over long-lived sensitive genomic data while preserving sovereign control of raw data.
 
-## Core Principles
-- Sovereign control of genomic data
-- Post-quantum by design (Dilithium, STARKs, Lizard-CP-ABE)
-- Dual-entity structure: bDNA Foundation (non-profit) + Zyan (for-profit hardware)
-- Open specification — any accredited lab or nation can implement
+**Solution**  
+bDNA is a protocol architecture that converts raw genomic sequencing data into compact, cryptographically verifiable **cryptogenomic proof objects** at the point of sequencing. Raw sequence data remains under institutional/sovereign control. Only the proof object travels.
 
+The proof object combines:
+- Merkle commitment to the raw data
+- Recursive STARK-based verifiable computation of genomic analyses
+- Post-quantum digital signatures (Dilithium, FIPS 204)
+- Hardware attestation (secure element / Enclave)
+- Post-quantum access control envelope (lattice-based CP-ABE successor)
 
-## Quick Start
-```bash
-git clone https://github.com/Shoel121516/bDNA-Foundation.git
+This architecture enables sovereign, post-quantum, policy-enforced sharing of genomic insights without exposing raw data.
+
+**Purpose of this repository**  
+This repository serves as public defensive publication of the bDNA protocol concept to establish prior art. It contains only high-level problem statement and solution architecture. No proprietary implementation details, hardware designs, or internal documents are disclosed here.
+
+**Version:** June 2026 (defensive publication)  
+**License:** CC0 1.0 (Public Domain Dedication) for this publication
+
+**Contact**  
+Shoel Lowy — lowy_s@blockchaindnafoundation.org
+
+---
+
+*This repository is maintained for defensive publication and open scientific prior art only.*
