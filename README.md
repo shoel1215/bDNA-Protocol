@@ -2,8 +2,7 @@
 
 **Defensive Publication — June 2026**
 
-**The Problem**  
-Genomic sequencing and identification today rely on high human/institutional trust. Raw molecular data must often be moved or shared, creating privacy risks, sovereignty issues, and quantum vulnerabilities.
+Genomic sequencing and identification systems currently rely on high human/institutional trust. Raw molecular data must often be moved or shared, creating privacy risks, sovereignty issues, and quantum vulnerabilities.
 
 **The Solution**  
 bDNA integrates a secure machine (Enclave) with a post-quantum protocol that generates cryptogenomic proof objects directly at the point of sequencing.
@@ -15,6 +14,10 @@ Raw sequence data never leaves the local secure environment. Only compact, verif
 This minimizes human involvement and enables sovereign genomic identification with post-quantum security.
 
 See `bDNA_Protocol_Overview.md` for details.
+
+**TSI Enclave**  
+Detailed technical specification available at:  
+[https://github.com/shoel1215/TSI-Enclave](https://github.com/shoel1215/TSI-Enclave)
 
 **Lizard-CP-ABE**: Separate repository for the post-quantum access control component.
 
